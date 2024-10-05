@@ -65,8 +65,7 @@
 ![GAMBAR2](screenshot/ss2.png)
 
 ### Menambahkan inline CSS
-```<p style="text-align: center; color: #ccd8e4;"></p>
-```
+`<p style="text-align: center; color: #ccd8e4;"></p>`
 ![GAMBAR3](screenshot/ss3.png)
 
 ### Membuat CSS Eksternal
