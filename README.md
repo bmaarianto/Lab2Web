@@ -131,3 +131,32 @@ Kemudian tambahkan tag `<link>` untuk merujuk file CSS yang sudah dibuat pada ba
 }
 ```
 ![GAMBAR5](screenshot/ss5.png)
+
+### Jawaban
+```
+1. 
+
+2. Terdapat perbedaan penting dalam pendeklarasian CSS antara h1 {...} dan #intro h1 {...}. Saya akan menjelaskan perbedaan kedua deklarasi tersebut:
+
+h1 {...}:
+
+Ini adalah selector elemen dasar.
+Berlaku untuk semua elemen <h1> di seluruh dokumen HTML.
+Memiliki spesifisitas yang lebih rendah.
+
+
+#intro h1 {...}:
+
+Ini adalah selector kombinasi, terdiri dari selector ID dan selector elemen.
+Hanya berlaku untuk elemen <h1> yang berada di dalam elemen dengan ID "intro".
+Memiliki spesifisitas yang lebih tinggi karena menggunakan ID.
+
+3. Ketika ada beberapa deklarasi CSS yang diterapkan pada elemen yang sama melalui internal CSS, eksternal CSS, dan inline CSS, browser akan menampilkan gaya berdasarkan urutan prioritas dan spesifisitas CSS. Saya akan menjelaskan urutan prioritasnya dan memberikan contoh.
+Urutan prioritas (dari yang terendah ke tertinggi):
+
+Eksternal CSS
+Internal CSS
+Inline CSS
+
+4. Ketika sebuah elemen HTML memiliki baik ID maupun class, dan keduanya memiliki deklarasi CSS, maka selector yang memiliki spesifisitas lebih tinggi akan ditampilkan oleh browser. Dalam hal ini, selector ID memiliki spesifisitas yang lebih tinggi dibandingkan dengan selector class.
+```
