@@ -2,7 +2,8 @@
 ## Belajar CSS dasar
 
 ### Membuat dokumen HTML
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,7 +38,8 @@
 ![GAMBAR1](screenshot/ss1.png)
 
 ### Mendeklarasikan CSS internal
-```<head>
+```
+<head>
     <title>CSS Dasar</title>
     <style>
         body {
@@ -65,11 +67,14 @@
 ![GAMBAR2](screenshot/ss2.png)
 
 ### Menambahkan inline CSS
-`<p style="text-align: center; color: #ccd8e4;"></p>`
+```
+<p style="text-align: center; color: #ccd8e4;"></p>
+```
 ![GAMBAR3](screenshot/ss3.png)
 
 ### Membuat CSS Eksternal
-```nav {
+```
+nav {
     background: #20A759;
     color: #fff;
     padding: 10px;
@@ -87,7 +92,8 @@ nav a:hover {
 }
 ```
 Kemudian tambahkan tag `<link>` untuk merujuk file CSS yang sudah dibuat pada bagian `<head>`
-```<head>
+```
+<head>
     <!-- menyisipkan css eksternal -->
     <link rel="stylesheet" href="style_eksternal.css" type="text/css">
 </head>
@@ -95,7 +101,8 @@ Kemudian tambahkan tag `<link>` untuk merujuk file CSS yang sudah dibuat pada ba
 ![GAMBAR4](screenshot/ss4.png)
 
 ### Menambahkan CSS selector
-```/* ID Selector */
+```
+/* ID Selector */
 #intro {
     background: #418fb1;
     border: 1px solid #099249;
