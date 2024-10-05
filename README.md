@@ -32,5 +32,96 @@
     </div>
 </body>
 
-</html>```
+</html>
+```
 ![GAMBAR1](screenshot/ss1.png)
+
+### Mendeklarasikan CSS internal
+```<head>
+    <title>CSS Dasar</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        header {
+            min-height: 80px;
+            border-bottom: 1px solid #77CCEF;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #0F189F;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        h1 i {
+            color: #6d6a6b;
+        }
+    </style>
+</head>
+```
+![GAMBAR2](screenshot/ss2.png)
+
+### Menambahkan inline CSS
+```<p style="text-align: center; color: #ccd8e4;"></p>
+```
+![GAMBAR3](screenshot/ss3.png)
+
+### Membuat CSS Eksternal
+```nav {
+    background: #20A759;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav .active,
+nav a:hover {
+    background: #0B6B3A;
+}
+```
+Kemudian tambahkan tag `<link>` untuk merujuk file CSS yang sudah dibuat pada bagian `<head>`
+```<head>
+    <!-- menyisipkan css eksternal -->
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+</head>
+```
+![GAMBAR4](screenshot/ss4.png)
+
+### Menambahkan CSS selector
+```/* ID Selector */
+#intro {
+    background: #418fb1;
+    border: 1px solid #099249;
+    min-height: 100px;
+    padding: 10px;
+}
+
+#intro h1 {
+    text-align: left;
+    border: 0;
+    color: #fff;
+}
+
+/* Class Selector */
+.button {
+    padding: 15px 20px;
+    background: #bebcbd;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #E42A42;
+}
+```
+![GAMBAR5](screenshot/ss5.png)
